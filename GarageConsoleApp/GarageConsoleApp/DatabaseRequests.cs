@@ -136,7 +136,7 @@ public static class DatabaseRequests
             Console.WriteLine($"Id: {reader[0]} Категория: {reader[1]} Наименование: {reader[2]} Номер: {reader[3]} Количество пассажиров: {reader[4]}");
         }
     }
-    
+     // добавить машину
     public static void AddCarQuery(int id_type_car, string name, string state_number, int number_passengers )
     {
         var querySql = $"INSERT INTO car(id_type_car, name, state_number, number_passengers)" +
@@ -144,4 +144,49 @@ public static class DatabaseRequests
         using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
         cmd.ExecuteNonQuery();
     }
+    
+    // просмотр пути назначения и отправки
+    public static void GetItinerraryQuery()
+    {
+        var querySql = "SELECT * FROM itinerary;";
+        using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
+        using var reader = cmd.ExecuteReader();
+
+        while (reader.Read())
+        {
+            Console.WriteLine($"Id: {reader[0]} Пункт отправки-назначения: {reader[1]} ");
+        }
+    }
+    // добавить путь назначения и отправки
+    
+    public static void AddItinerraryQuery(string name)
+    {
+        var querySql = $"INSERT INTO itinerary(name) VALUES ('{name}')";
+        using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
+        cmd.ExecuteNonQuery();
+    }
+    
+    //просмотр рейсов
+    public static void GetRouteQuery()
+    {
+        var querySql = "SELECT * FROM route";
+        using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
+        using var reader = cmd.ExecuteReader();
+
+        while (reader.Read())
+        {
+            Console.WriteLine($"Id: {reader[0]} ID водителя: {reader[1]} ID машины: {reader[2]} ID маршрута: {reader[3]} Количество пассажиров: {reader[4]}");
+        }
+    }
+    
+    //добавление рейсов
+    
+    public static void AddRouteQuery(int id_car, int number_passengers, int id_itinerary, int id_driver)
+    {
+        var querySql = $"INSERT INTO route(id_car, number_passengers, id_itinerary, id_driver) " +
+                       $"VALUES ('{id_car}', '{number_passengers}', '{id_itinerary}', '{id_driver}')";
+        using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
+        cmd.ExecuteNonQuery();
+    }
+    
 }

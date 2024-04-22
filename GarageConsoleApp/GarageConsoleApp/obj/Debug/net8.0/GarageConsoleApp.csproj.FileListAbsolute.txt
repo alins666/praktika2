@@ -28,3 +28,4 @@ C:\Users\gr622_haara\RiderProjects\ConsoleApp1\GarageConsoleApp\GarageConsoleApp
 C:\Users\gr622_haara\RiderProjects\ConsoleApp1\GarageConsoleApp\GarageConsoleApp\obj\Debug\net8.0\GarageConsoleApp.pdb
 C:\Users\gr622_haara\RiderProjects\ConsoleApp1\GarageConsoleApp\GarageConsoleApp\obj\Debug\net8.0\GarageConsoleApp.genruntimeconfig.cache
 C:\Users\gr622_haara\RiderProjects\ConsoleApp1\GarageConsoleApp\GarageConsoleApp\obj\Debug\net8.0\ref\GarageConsoleApp.dll
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\GarageConsoleApp\GarageConsoleApp\obj\Debug\net8.0\GarageConsoleApp.sourcelink.json

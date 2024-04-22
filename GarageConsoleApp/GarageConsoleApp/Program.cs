@@ -109,6 +109,44 @@ public class Program
                         DatabaseRequests.AddCarQuery(id_type_car, name, state_number, number_passengers);
                     }
                     break;
+                case 4:
+                    Console.WriteLine("Чтобы посмореть маршруты введите =");
+                    Console.WriteLine("Чтобы добавить маршрут введите +");
+                    char l = Convert.ToChar(Console.ReadLine());
+                    if (l == '=')
+                    {
+                        DatabaseRequests.GetItinerraryQuery();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Введите маршрут (Пункт отправки - пункт назначения):");
+                        string k = Console.ReadLine();
+                        DatabaseRequests.AddItinerraryQuery(k); 
+                    }
+                    Console.WriteLine();
+                    break;
+                case 5:
+                    Console.WriteLine("Чтобы посмореть рейсы введите =");
+                    Console.WriteLine("Чтобы добавить рейс введите +");
+                    char p = Convert.ToChar(Console.ReadLine());
+                    if (p == '=')
+                    {
+                        DatabaseRequests.GetRouteQuery();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Введите ID водителя:");
+                        int idDreiver = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите ID машины:");
+                        int idCar = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите ID маршрута:");
+                        int idItinerary = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите количество пассажиров:");
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        DatabaseRequests.AddRouteQuery(idDreiver, idCar, idItinerary, number); 
+                    }
+                    Console.WriteLine();
+                    break;
             }
             
         }
