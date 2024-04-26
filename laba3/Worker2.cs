@@ -24,7 +24,7 @@ public class Worker2
         return Days;
     }
 
-    public Worker(string name, string surname, double rate, int days)
+    public Worker2(string name, string surname, double rate, int days)
     {
         this.Name = name;
         this.Surname = surname;

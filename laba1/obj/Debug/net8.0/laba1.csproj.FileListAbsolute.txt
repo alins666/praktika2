@@ -1,0 +1,15 @@
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\bin\Debug\net8.0\laba1.exe
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\bin\Debug\net8.0\laba1.deps.json
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\bin\Debug\net8.0\laba1.runtimeconfig.json
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\bin\Debug\net8.0\laba1.dll
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\bin\Debug\net8.0\laba1.pdb
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.AssemblyInfoInputs.cache
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.AssemblyInfo.cs
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.csproj.CoreCompileInputs.cache
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.sourcelink.json
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.dll
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\refint\laba1.dll
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.pdb
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\laba1.genruntimeconfig.cache
+C:\Users\gr622_haara\RiderProjects\ConsoleApp1\laba1\obj\Debug\net8.0\ref\laba1.dll
